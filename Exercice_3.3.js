@@ -9,9 +9,16 @@ while (userNumber > 0) {
   firstArray.push(anotherThings);
   userNumber -= 1;
 }
+
 console.log("The array is already for the copy: " + firstArray);
-let secondArray =[];
+
+let secondArray = [];
 for (let i = 0; i < firstArray.length; i++) {
   secondArray.push(firstArray[i]);
 }
-console.log(secondArray);
+
+console.log("This array is a copy who use a for loop: " + secondArray);
+
+let sliceArray = secondArray.slice()
+
+console.log("This array is a copy who use .slice(): " + sliceArray);
